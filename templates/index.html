@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/48831549cb.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+  /* Scrollbar  */
+  
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+  
+a{
+    text-decoration: none;
+    color: black;
+}
+.bg-user{
+    background: url(../static/user.png);
+}
+
+.bg-vegie{
+    background: url(../static/Firefly\ gym\ equipments\ \,\ fruits\ and\ vegetables\ \,\ food\ items;\ bright\ purple\ velor\ colour;gradient\ 191\ 1.png);
+}
+
+.bg-calories{
+    background: url(../static/calories\ 1.png);
+}
+
+.bg-meals{
+    background: url(../static/meals\ logged\ final\ 1.png);
+}
+
+.bg-sadDick{
+    background: url(../static/sag.jpg);
+}
+.bg-calForm{
+    background: url(../static/mountain\ 1\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo-img{
+    background: url(../static/logo1111\ 3.png);
+    height: 10vh;
+    width:  10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.name-img{
+    background: url(../static/platemate.png);
+    height: 10vh;
+    width:  10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5vh;
+}
+
+
+.text-big {
+    color: black;
+    font-family: Black Han Sans;
+    font-size: 39.4px;
+    font-weight: 400;
+    line-height: 52.8px;
+    text-align: left;
+
+}
+
+.text-small {
+    font-size: 21px;
+    color: black;
+    font-family: Alef;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+
+}
+  
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 15px 0px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    background: none;
+    color: black
+}
+  
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.527);
+    cursor: pointer;
+    color: white;
+}
+  
+.btn-sm {
+    padding: 6px 10px;
+    /* vertical-align: middle; */
+}
+
+.navbar{
+    display: flex;
+    padding: 1vh 1vw;
+    background: #F6EEEEDC;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    height: 8.57vh;
+    width: 97.2vw;
+
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-list li{
+    list-style: none;
+    text-decoration: none;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+    font-family: Cabin;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+
+}
+.nav-list li  :hover{
+    color: #d62a2a;
+}
+
+.firstSection{
+    height: 90vh;
+    width: 98vw;
+    margin: auto;
+    margin-bottom: 3vh;
+}
+
+.box-big{
+    background: #381ED538;
+    height: 57.2vh;
+    width: 98vw;
+    margin: auto;
+    border-radius: 70px;
+    border-top-left-radius: 0px;
+    border-top-right-radius:0px ;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+    
+}
+.box-big .buttons{
+    height: 8vh;
+    width: 18vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.benchmarks{
+    display: flex;
+    justify-content: space-between  ;
+}
+
+.paras{
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paras-big{
+    width: 40%;
+    margin: 6vh 2vw;
+}
+
+.image-big{
+    height: 50vh;
+    width: 30.5vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 6vh 2vw;
+
+}
+
+.secondSection{
+    height: 100vh;
+    width: 99.4vw;
+    /* margin-top: 3vh; */
+    margin-bottom: 3vh;
+    display: flex;
+
+}
+/* @keyframes glow{
+    0%{background-color: yellow;}
+    10%{background-color: rgb(255, 217, 0);}
+    20%{background-color: rgb(255, 187, 0);}
+    30%{background-color: rgb(255, 145, 0);}
+    40%{background-color: rgb(255, 98, 0);}
+    50%{background-color: red;}
+    60%{background-color: rgb(255, 98, 0);}
+    70%{background-color: rgb(255, 162, 0);}
+    80%{background-color: rgb(255, 187, 0);}
+    90%{background-color: rgb(255, 217, 0);}
+    0%{background-color: yellow;}
+    
+
+} */
+.box-small{
+    background: #381ED538;
+    height: 30.6vh;
+    width: 24vw;
+    margin: auto;
+
+    border-radius: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* animation: glow 6s infinite  ease-in-out */
+    
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #381ED5ED;
+
+    height: 45vh;
+    width: 100%;
+    margin-top: 1vh;
+    /* margin-bottom: 3vh; */
+}
+.box-medium{
+    height: 35vh;
+    width: 96vw;
+    margin: auto;
+
+    /* border-radius: 70px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+
+.image-small{
+    height: 10vh;
+    width: 5vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pad-sm-top {
+    padding-top: 15px;
+}
+.pad-sm-bot {
+    padding-bottom: 18px;
+}
+
+.font-md {
+    font-size: 35px;
+}
+.font-sm {
+    font-size: 18px;
+}
+  
+.foot-font {
+    font-family: "Courier New", Courier, monospace;
+    color: black;
+}
+
+.footer .box-medium{
+    justify-content: space-between;
+}
+
+.navigation a :hover{
+    color: #d62a2a;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.navigation-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+}
+
+.navigation a p{
+    margin-bottom: 2vh;
+}
+
+.line{
+    height: 2vh;
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.text-white{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-img">
+
+            </div>
+            <div class="name-img">
+            </div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Pricing</a></li>
+        </ul>
+        <a href="#">
+            <button class="btn log-in btn-sm">Sign In</button>
+  
+        </a>
+    </nav>
+    <section class="firstSection">
+        <div class="box box-big">
+            <div class="paras paras-big">
+                <p class="text-big">
+                    Organize your meals
+                    and track them easily!
+                </p>
+                <p class="text-small">
+                    We provide accurate calorie information for your meals ensuring healthy choices.
+                </p>
+                <div class="buttons">
+                    <a href="#">
+                        <button class="btn log-in btn-sm">Try CalC</button>
+              
+                    </a>
+                    <a href="#">
+                        <button class="btn log-in btn-sm">Talk To AI Proxy</button>
+              
+                    </a>
+
+                </div>
+            </div>
+            <div class="bg-vegie image-big ">
+                    
+            </div>
+            
+        </div>
+        <div class="benchmarks">
+            <div class="box box-small">
+                <div class="paras">
+                    <p class="text-small">
+                        Engaged Users
+                    </p>
+                    <p class="text-big">
+                        500K+
+                    </p>
+                </div>
+                <div class="image-small bg-user">
+    
+                </div>
+            </div>
+            <div class="box box-small">
+                <div class="paras">
+                    <p class="text-small">
+                        Meals Logged
+                    </p>
+                    <p class="text-big">
+                        1K+
+                    </p>
+                </div>
+                <div class="image-small bg-meals">
+    
+                </div>
+            </div>
+            <div class="box box-small">
+                <div class="paras">
+                    <p class="text-small">
+                        Calories Analysed
+                    </p>
+                    <p class="text-big">
+                        2M+
+                    </p>
+                </div>
+                <div class="image-small bg-calories">
+    
+                </div>
+            </div>
+            <div class="box box-small">
+                <div class="paras">
+                    <p class="text-small">
+                        Let's not be
+                    </p>
+                    <p class="text-small">
+                        Unhealthy!
+                    </p>
+                    <p class="text-big">
+                    </p>
+                </div>
+                <div class="image-small bg-sadDick">
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secondSection bg-calForm">
+        <!-- <div class="box box-small">
+            <div class="paras">
+                <p class="text-small">
+                    Engaged Users
+                </p>
+                <p class="text-big">
+                    500K+
+                </p>
+            </div>
+            <div class="image-small bg-user">
+
+            </div>
+        </div>
+        <div class="box box-small">
+            <div class="paras">
+                <p class="text-small">
+                    Meals Logged
+                </p>
+                <p class="text-big">
+                    1K+
+                </p>
+            </div>
+            <div class="image-small bg-spoon">
+
+            </div>
+        </div>
+        <div class="box box-small">
+            <div class="paras">
+                <p class="text-small">
+                    Calories Analysed
+                </p>
+                <p class="text-big">
+                    2M+
+                </p>
+            </div>
+            <div class="image-small bg-cloud">
+
+            </div>
+        </div>
+        <div class="box box-small">
+            <div class="paras">
+                <p class="text-small">
+                    Don't Be
+                </p>
+                <p class="text-small">
+                    Saggy & Unhealthy!
+                </p>
+                <p class="text-big">
+                    Sad Dick
+                </p>
+            </div>
+            <div class="image-small bg-sadDick">
+
+            </div>
+        </div> -->
+    </section>
+    <footer class="footer">
+        <div class="box box-medium">
+            <div class="logo flex-col">
+                <div class="logo-img">
+    
+                </div>
+                <div class="name-img">
+                </div>
+
+            </div>
+            <div class="contact text-small text-white">
+                <p>Address</p><br>
+                <p>Patiala:#03-12 BS Model Town, Patiala 147001</p><br>
+                <p>Ludhiana:  Sunview Enclave,South City,141001</p><br>
+                <p>Contact</p>
+                <p>7889138533</p>
+                <p>support@platemate.com</p>
+
+
+            </div>
+            <div class="navigation-social">
+                
+                <div class="social-media text-small">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-regular fa-envelope-open"></i></a>
+                </div>
+                <div class="navigation ">
+                    
+                    <a href="#"><p class="text-white">Home</p></a>
+                    <a href="#"><p class="text-white">How It Works</p></a>
+                    <a href="#"><p class="text-white">FAQ</p></a>
+                    <a href="# "><p class="text-white">Contact</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <p class=" foot-font text-center font-sm pad-sm-top text-white ">
+            Copyright &copy; 2027- All rights are reserved by CalTrek
+        </p>
+    </footer>
+</body>
+</html>
